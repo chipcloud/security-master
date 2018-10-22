@@ -72,6 +72,8 @@ public class AppSingUpUtils {
 		if (StringUtils.isBlank(deviceId)) {
 			throw new AppSecretException("设备id参数不能为空");
 		}
+
+		System.out.println("");
 		return "imooc:security:social.connect." + deviceId;
 	}
 
